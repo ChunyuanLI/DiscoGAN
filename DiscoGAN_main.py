@@ -205,7 +205,7 @@ for _ in range(n_viz):
         imx = np.vstack([imx, temp_imx]) if imx.size else temp_imx
 
         temp_rmx = sess.run(rec_x, feed_dict={x: xmb, z:zmb})
-        rmx = np.vstack([rmx, temp_imx]) if rmx.size else temp_rmx
+        rmx = np.vstack([rmx, temp_rmx]) if rmx.size else temp_rmx
 
 ## inferred marginal z
 fig_mz, ax = plt.subplots(nrows=1, ncols=1, figsize=(4.5, 4.5))
