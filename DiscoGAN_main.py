@@ -13,7 +13,6 @@ from tqdm import tqdm
 
 slim = tf.contrib.slim
 ds = tf.contrib.distributions
-st = tf.contrib.bayesflow.stochastic_tensor
 graph_replace = tf.contrib.graph_editor.graph_replace
 
 
