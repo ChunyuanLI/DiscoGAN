@@ -23,9 +23,8 @@ The reuslts:
 
 
 ### Links
-   Official PyTorch implementation (https://github.com/SKTBrain/DiscoGAN)
-   
-   Another PyTorch implementation (https://github.com/carpedm20/DiscoGAN-pytorch)
+   - Official PyTorch implementation (https://github.com/SKTBrain/DiscoGAN)
+   - Another PyTorch implementation (https://github.com/carpedm20/DiscoGAN-pytorch)
 
 
 
