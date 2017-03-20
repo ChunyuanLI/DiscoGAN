@@ -142,9 +142,11 @@ decoder_sigmoid_x = tf.nn.softplus(decoder_logit_x)
 encoder_sigmoid_z = tf.nn.softplus(encoder_logit_z)
 decoder_sigmoid_z = tf.nn.softplus(decoder_logit_z)
 
+decoder_loss = decoder_sigmoid_x + decoder_sigmoid_z
+encoder_loss = encoder_sigmoid_x + encoder_sigmoid_z
 
-decoder_loss = decoder_logit_x + decoder_logit_z
-encoder_loss = encoder_logit_x + encoder_logit_z
+# decoder_loss = decoder_logit_x + decoder_logit_z
+# encoder_loss = encoder_logit_x + encoder_logit_z
 
 disc_loss = tf.reduce_mean(  encoder_loss ) - tf.reduce_mean( decoder_loss)
 
