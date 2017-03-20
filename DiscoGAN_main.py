@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import tensorflow as tf
 from data_gmm import GMM_distribution, sample_GMM, plot_GMM
-from data_utils import OneHot, shuffle, iter_data, tensor_shuffle
+from data_utils import shuffle, iter_data
 from tqdm import tqdm
 
 slim = tf.contrib.slim
