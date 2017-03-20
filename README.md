@@ -21,3 +21,8 @@ To train:
 The reuslts:    
 <img src="results/DiscoGAN/Overall.png" width="600px">
 
+
+### Links
+For official PyTorch implementation (https://github.com/SKTBrain/DiscoGAN)
+
+
