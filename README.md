@@ -11,3 +11,13 @@ Prerequisites
    - Others
    
 ### 2-GMM to 5-GMM
+
+This is a toy dataset, with domain A as 2-component GMM, and domain B as 5-component GMM.
+
+To train:
+
+    $ python DiscoGAN_main.py'
+    
+The reuslts:    
+<img src="results/DiscoGAN/Overall.png" width="600px">
+
