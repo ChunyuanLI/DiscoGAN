@@ -12,7 +12,7 @@ Prerequisites
    
 ### 5-GMM to 2-GMM
 
-The demo is tested a toy dataset, with domain X as 2-component GMM, and domain Z as 5-component GMM. It can be easily extended to other GMM settings, and real dataset.
+The demo is tested a toy dataset, with domain X as 5-component GMM, and domain Z as 2-component GMM. It can be easily extended to other GMM settings, and real dataset.
 
 To train:
 
