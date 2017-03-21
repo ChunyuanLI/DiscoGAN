@@ -1,3 +1,4 @@
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
 Created on Sun Mar 19 13:22:00 2017
@@ -27,7 +28,7 @@ class sample_GMM():
         if rng is None:
             seed = kwargs.pop('seed', 0)
             rng = np.random.RandomState(seed)
-    
+
         gaussian_mixture = GMM_distribution(means=means,
                                                        variances=variances,
                                                        priors=priors,
@@ -40,7 +41,7 @@ class sample_GMM():
         densities = gaussian_mixture.pdf(x=features)
 
         data ={'samples': features, 'label': labels, 'density': densities}
-        
+
         self.data = data
 
 class GMM_distribution(object):
@@ -114,7 +115,7 @@ class GMM_distribution(object):
         pdfs = map(lambda m, v, p: p * self._gaussian_pdf(x, m, v),
                    self.means, self.variances, self.priors)
         return reduce(lambda x, y: x + y, pdfs, 0.0)
-        
+
 def plot_GMM(dataset, save_path):
     figure, axes = plt.subplots(nrows=1, ncols=1, figsize=(4.5, 4.5))
     ax = axes
@@ -126,17 +127,16 @@ def plot_GMM(dataset, save_path):
     ax.set_xlabel('$x_1$')
     ax.set_ylabel('$x_2$')
     ax.axis('on')
-        
+
     ax.set_title('$\mathbf{x} \sim $GMM$(\mathbf{x})$')
-    
+
     x       = dataset.data['samples']
     targets = dataset.data['label']
-    c_type = cm.nipy_spectral(np.linspace(0, 1, max(targets*2)))
-    colors = [c_type[i-1] for i in targets]
-    axes.scatter(x[:, 0], x[:, 1], marker='.', c=colors, alpha=0.3)   
+
+    axes.scatter(x[:, 0], x[:, 1], marker='.', c=cm.Set1(targets.astype(float)/2.0/2.0) , alpha=0.3)
     plt.tight_layout()
-    plt.savefig(save_path, transparent=True, bbox_inches='tight')     
-        
+    plt.savefig(save_path, transparent=True, bbox_inches='tight')
+
 if __name__ == '__main__':
     means = map(lambda x:  np.array(x), [[0, 0],
                                      [2, 2],
@@ -145,15 +145,12 @@ if __name__ == '__main__':
                                      [-1, 1]])
     std = 0.1
     variances = [np.eye(2) * std for _ in means]
-                 
-    priors = [1.0/len(means) for _ in means]   
-              
+
+    priors = [1.0/len(means) for _ in means]
+
     gaussian_mixture = GaussianMixtureDistribution(means=means,
                                                    variances=variances,
                                                    priors=priors)
-    dataset = GaussianMixture(1000, means, variances, priors, sources=('features', )) 
+    dataset = GaussianMixture(1000, means, variances, priors, sources=('features', ))
     save_path = './gmm_data.pdf'
     draw_GMM(dataset, save_path)
-
-
-                
