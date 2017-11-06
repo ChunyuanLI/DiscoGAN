@@ -6,7 +6,7 @@ with Generative Adversarial Networks](https://arxiv.org/pdf/1703.05192.pdf).
 
 ### Recent development 
 
-Our NIPS paper [**ALICE**](https://arxiv.org/abs/1709.01215) improves DiscoGAN/CycleGAN/DualGAN, please see [its code repo](https://github.com/ChunyuanLI/ALICE), and [comparison on cartoon generation](https://github.com/ChunyuanLI/Alice4Alice) 
+Our NIPS paper [**ALICE**](https://arxiv.org/abs/1709.01215) improves DiscoGAN/CycleGAN/DualGAN, please see [its code repo](https://github.com/ChunyuanLI/ALICE), and [comparison on cartoon generation](https://github.com/ChunyuanLI/Alice4Alice). 
 
 Prerequisites
 -------------
