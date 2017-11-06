@@ -4,7 +4,7 @@ DiscoGAN
 Tensorflow implementation of [Learning to Discover Cross-Domain Relations
 with Generative Adversarial Networks](https://arxiv.org/pdf/1703.05192.pdf). 
 
-Our recent [NIPS paper ALICE](https://arxiv.org/abs/1709.01215) improves DiscoGAN, see [its code repo] (https://github.com/ChunyuanLI/ALICE), and [comparison](https://github.com/ChunyuanLI/Alice4Alice) 
+Our recent [NIPS paper ALICE](https://arxiv.org/abs/1709.01215) improves DiscoGAN, see [its code repo](https://github.com/ChunyuanLI/ALICE), and [comparison](https://github.com/ChunyuanLI/Alice4Alice) 
 
 Prerequisites
 -------------
