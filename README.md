@@ -8,7 +8,7 @@ with Generative Adversarial Networks](https://arxiv.org/pdf/1703.05192.pdf).
 
 Our NIPS paper [**ALICE**](https://arxiv.org/abs/1709.01215) improves DiscoGAN/CycleGAN/DualGAN, please see [its code repo](https://github.com/ChunyuanLI/ALICE), and [comparison on cartoon generation](https://github.com/ChunyuanLI/Alice4Alice). 
 
-![](https://github.com/ChunyuanLI/ALICE/plot_generation/figures_alice/alice_log_movie.gif)
+![](https://github.com/ChunyuanLI/ALICE/blob/master/plot_generation/figures_alice/alice_log_movie.gif)
 
 *[Alice4Alice](https://github.com/ChunyuanLI/Alice4Alice): ALICE algorithms for painting the cartoon of Alice's Adventures in Wonderland*
 
